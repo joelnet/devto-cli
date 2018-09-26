@@ -1,0 +1,32 @@
+{
+  "name": "mojiscript-starter-app",
+  "version": "1.0.0",
+  "description": "MojiScript Starter App",
+  "author": "Joel Thoms",
+  "license": "MIT",
+  "scripts": {
+    "start": "node --experimental-modules --no-warnings src/index.mjs",
+    "build": "eslint . --ext .js,.mjs",
+    "test": "jest",
+    "test:coverage": "jest --colors --coverage",
+    "test:coveralls": "npm run test:coverage -- --coverageReporters=text-lcov | coveralls",
+    "patch-readme": "node --experimental-modules --no-warnings bin/patch-readme/index.mjs",
+    "watch": "esw -w --fix --ext .js,.mjs"
+  },
+  "dependencies": {
+    "mojiscript": "^0.1.21"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-plugin-fp": "^2.3.0",
+    "eslint-plugin-prefer-arrow": "^1.1.2",
+    "eslint-watch": "^4.0.2",
+    "jest": "^23.5.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,mjs}",
+      "!coverage/**"
+    ]
+  }
+}
