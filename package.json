@@ -1,7 +1,7 @@
 {
-  "name": "mojiscript-starter-app",
+  "name": "devto-cli",
   "version": "1.1.0",
-  "description": "MojiScript Starter App",
+  "description": "DEV.to CLI",
   "author": "Joel Thoms",
   "license": "MIT",
   "scripts": {
@@ -11,7 +11,11 @@
     "watch": "esw -w --fix --ext .js,.mjs"
   },
   "dependencies": {
-    "mojiscript": "^0.4.1"
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "mojiscript": "^0.4.1",
+    "nothis": "^1.2.2",
+    "reselect": "^4.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
