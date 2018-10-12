@@ -4,6 +4,9 @@
   "description": "DEV.to CLI",
   "author": "Joel Thoms",
   "license": "MIT",
+  "bin": {
+    "devto": "./src/index.mjs"
+  },
   "scripts": {
     "start": "node --experimental-modules --no-warnings src/index.mjs",
     "build": "eslint . --ext .js,.mjs",
@@ -13,6 +16,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.2",
+    "html-to-text": "^4.0.0",
     "mojiscript": "^0.4.1",
     "nothis": "^1.2.2",
     "reselect": "^4.0.0"
