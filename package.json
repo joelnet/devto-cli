@@ -14,7 +14,7 @@
     "watch": "esw -w --fix --ext .js,.mjs"
   },
   "dependencies": {
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.2",
     "html-to-text": "^4.0.0",
     "mojiscript": "^0.11.3",
